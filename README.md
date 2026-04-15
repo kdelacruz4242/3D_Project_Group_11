@@ -2,7 +2,7 @@
 Name of Game: [Name of Game]
 
 Group Members:
-Kaye-Angeli Delacruz, Abigail Dupaya, Kaylie Pham, Daniel Blores
+Kaye-Angeli Delacruz, Abigail Dupaya, Kaylie Pham, Daniel Flores
 
 Description: [Description of current target for the game]
 
