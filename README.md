@@ -24,9 +24,9 @@ and persistence.
 
 # General goals for each person:
 
-Kaye-Angeli - Coding / Level 1 and 2 Design / Art Abigail - Coding /
-Level Design 1 and 2 / Art Kaylie - Coding / Level 3 and Tutorial Design
-/ Art and Animation Daniel - Coding / Level 3 and Tutorial Design / Art
-and Animation
+Kaye-Angeli - Coding / Level 1 and 2 Design / Art 
+Abigail - Coding / Level Design 1 and 2 / Art 
+Kaylie - Coding / Level 3 and Tutorial Design / Art and Animation 
+Daniel - Coding / Level 3 and Tutorial Design / Art and Animation
 
 # Video Link:
