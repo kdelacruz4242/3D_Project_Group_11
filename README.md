@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # 3D_Project_Group_11
 
 # Name of Game:
