@@ -31,5 +31,3 @@ Abigail - Coding / Level Design 1 and 2 / Art
 Kaylie - Coding / Level 3 and Tutorial Design / Art and Animation 
 
 Daniel - Coding / Level 3 and Tutorial Design / Art and Animation
-
-# Video Link:
