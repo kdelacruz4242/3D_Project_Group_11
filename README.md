@@ -2,7 +2,7 @@
 
 # Name of Game:
 
-[Name of Game]
+Tranquil Trials
 
 # Group Members:
 
