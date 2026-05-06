@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c84832aa20d216749871effa3c7bec44
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191326
+  packageName: 'Dungeon Trap System Kit - Lowpoly Modular Assets [Game-Ready Mechanics]'
+  packageVersion: 2.3
+  assetPath: Assets/ZerinLabs_enviroKit_RetroTraps/Animation/ac_decoTrap_wallSawB.controller
+  uploadId: 749730

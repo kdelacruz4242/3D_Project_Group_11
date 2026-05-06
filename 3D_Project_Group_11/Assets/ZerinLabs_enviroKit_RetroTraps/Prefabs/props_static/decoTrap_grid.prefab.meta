@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 946678ef729c60842ad709a29b703c2c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191326
+  packageName: 'Dungeon Trap System Kit - Lowpoly Modular Assets [Game-Ready Mechanics]'
+  packageVersion: 2.3
+  assetPath: Assets/ZerinLabs_enviroKit_RetroTraps/Prefabs/props_static/decoTrap_grid.prefab
+  uploadId: 749730

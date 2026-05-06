@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 62bbdd5356474cf48a8142e4dc4f39cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191326
+  packageName: 'Dungeon Trap System Kit - Lowpoly Modular Assets [Game-Ready Mechanics]'
+  packageVersion: 2.3
+  assetPath: Assets/ZerinLabs_enviroKit_RetroTraps/Materials/Mat_testTexture_URP.mat
+  uploadId: 749730

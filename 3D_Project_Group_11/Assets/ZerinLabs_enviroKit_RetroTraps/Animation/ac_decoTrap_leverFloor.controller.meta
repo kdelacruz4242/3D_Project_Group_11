@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 919c399ee0357124e9d48cfe9190f320
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191326
+  packageName: 'Dungeon Trap System Kit - Lowpoly Modular Assets [Game-Ready Mechanics]'
+  packageVersion: 2.3
+  assetPath: Assets/ZerinLabs_enviroKit_RetroTraps/Animation/ac_decoTrap_leverFloor.controller
+  uploadId: 749730

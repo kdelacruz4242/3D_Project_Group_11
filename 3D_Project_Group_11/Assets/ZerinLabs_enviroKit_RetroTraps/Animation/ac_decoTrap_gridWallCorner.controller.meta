@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d562d5f3f5d5fd4daed4f297591c48c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 191326
+  packageName: 'Dungeon Trap System Kit - Lowpoly Modular Assets [Game-Ready Mechanics]'
+  packageVersion: 2.3
+  assetPath: Assets/ZerinLabs_enviroKit_RetroTraps/Animation/ac_decoTrap_gridWallCorner.controller
+  uploadId: 749730
