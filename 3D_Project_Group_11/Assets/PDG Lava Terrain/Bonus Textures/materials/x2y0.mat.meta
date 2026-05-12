@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d6509e675c339024499faad7c9e1cc93
+labels:
+- landscape
+- planet
+- lava
+- sci-fi
+- terrain
+- moon
+- tiling
+timeCreated: 1431541282
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 27492
+  packageName: PDG Tiling Lava Terrain
+  packageVersion: 1.6
+  assetPath: Assets/PDG Lava Terrain/Bonus Textures/materials/x2y0.mat
+  uploadId: 221668

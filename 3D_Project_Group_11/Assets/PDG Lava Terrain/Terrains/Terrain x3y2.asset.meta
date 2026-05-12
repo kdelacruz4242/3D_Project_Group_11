@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 470d6c0fa2e5d2c47bb117dfd83b3f7d
+labels:
+- landscape
+- planet
+- lava
+- sci-fi
+- terrain
+- moon
+- tiling
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 27492
+  packageName: PDG Tiling Lava Terrain
+  packageVersion: 1.6
+  assetPath: Assets/PDG Lava Terrain/Terrains/Terrain x3y2.asset
+  uploadId: 221668
