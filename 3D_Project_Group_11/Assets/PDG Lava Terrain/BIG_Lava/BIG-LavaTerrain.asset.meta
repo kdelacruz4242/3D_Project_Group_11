@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 794c17262fd119f40a0858e82ca86953
+labels:
+- landscape
+- planet
+- lava
+- sci-fi
+- terrain
+- moon
+- tiling
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 27492
+  packageName: PDG Tiling Lava Terrain
+  packageVersion: 1.6
+  assetPath: Assets/PDG Lava Terrain/BIG_Lava/BIG-LavaTerrain.asset
+  uploadId: 221668

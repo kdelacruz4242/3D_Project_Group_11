@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: ad3573c966f0aa7498ea2303ea9de9b4
+timeCreated: 1514818507
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 27492
+  packageName: PDG Tiling Lava Terrain
+  packageVersion: 1.6
+  assetPath: Assets/PDG Lava Terrain/Script/TerrainStitcher.cs
+  uploadId: 221668
