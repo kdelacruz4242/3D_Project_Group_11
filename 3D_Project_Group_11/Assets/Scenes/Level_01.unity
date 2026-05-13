@@ -6595,7 +6595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1 &78643805 stripped
 GameObject:
@@ -19984,7 +19984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!114 &249043465
 MonoBehaviour:
@@ -24703,7 +24703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &303555477 stripped
 Transform:
@@ -38354,7 +38354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &494071689
 PrefabInstance:
@@ -42417,7 +42417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!114 &550493971
 MonoBehaviour:
@@ -50590,7 +50590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &657426477
 PrefabInstance:
@@ -52642,7 +52642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &682388191
 PrefabInstance:
@@ -53336,7 +53336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &694835925
 PrefabInstance:
@@ -88868,7 +88868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1160369938
 PrefabInstance:
@@ -96443,7 +96443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1268695005
 PrefabInstance:
@@ -103990,7 +103990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &1361333590 stripped
 Transform:
@@ -120597,7 +120597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!114 &1575934993
 MonoBehaviour:
@@ -122882,7 +122882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &1607013392 stripped
 Transform:
@@ -137135,7 +137135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1792013182
 PrefabInstance:
@@ -148434,7 +148434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1949777129
 PrefabInstance:
@@ -151110,7 +151110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1994056973
 PrefabInstance:
