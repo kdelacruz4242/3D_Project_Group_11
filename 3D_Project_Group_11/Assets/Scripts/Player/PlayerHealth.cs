@@ -5,14 +5,21 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public float invincibleTime = 1.5f;
+    public AudioClip deathSound;
+    
     bool isInvincible = false;
     Image damageFlash;
     CharacterController controller;
+    AudioSource audioSource;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
         CheckpointManager.lastCheckpoint = transform.position;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 0f; // 2D sound so player always hears it
 
         GameObject canvas = new GameObject("DamageCanvas");
         Canvas c = canvas.AddComponent<Canvas>();
@@ -30,6 +37,10 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage()
     {
         if (isInvincible) return;
+
+        if (deathSound != null)
+            audioSource.PlayOneShot(deathSound);
+
         StartCoroutine(FlashRed());
         StartCoroutine(Respawn());
     }
@@ -44,7 +55,6 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Respawn()
     {
         isInvincible = true;
-        // disable controller before teleporting
         controller.enabled = false;
         transform.position = CheckpointManager.lastCheckpoint;
         controller.enabled = true;
