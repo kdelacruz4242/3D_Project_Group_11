@@ -120,4 +120,10 @@ public class CeilingDrop : MonoBehaviour
         triggered = false;
         Debug.Log("Returned to start!");
     }
+
+    public void PlayerDied()
+{
+    if (returnToStart && triggered)
+        StartCoroutine(ReturnToStart());
+}
 }
