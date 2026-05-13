@@ -3,7 +3,6 @@ using System.Collections;
 
 public class SpikeDeath : MonoBehaviour
 {
-    public Transform spawnPoint;
     public AudioSource deathSound;
     public float respawnDelay = 0.4f;
 
@@ -30,15 +29,12 @@ public class SpikeDeath : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);
 
-        CharacterController controller = player.GetComponent<CharacterController>();
+        PlayerSpawn playerSpawn = player.GetComponent<PlayerSpawn>();
 
-        if (controller != null)
-            controller.enabled = false;
-
-        player.transform.position = spawnPoint.position;
-
-        if (controller != null)
-            controller.enabled = true;
+        if (playerSpawn != null)
+        {
+            playerSpawn.Respawn();
+        }
 
         isRespawning = false;
     }

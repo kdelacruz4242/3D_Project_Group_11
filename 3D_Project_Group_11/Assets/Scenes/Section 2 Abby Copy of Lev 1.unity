@@ -39854,6 +39854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   invincibleTime: 1.5
+  deathSound: {fileID: 8300000, guid: 23c6f294f86dc40f1b895607380dd319, type: 3}
 --- !u!1001 &647979377
 PrefabInstance:
   m_ObjectHideFlags: 0
