@@ -14712,7 +14712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &236178035
@@ -15385,7 +15384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &246401496
@@ -16157,7 +16155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &261032207 stripped
@@ -28176,7 +28173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &464367409 stripped
@@ -28258,6 +28254,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2249631847548828762, guid: c907ba55ba1d21e4d9c71f554aa7b08e, type: 3}
   m_PrefabInstance: {fileID: 2106469238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &466540236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466540237}
+  m_Layer: 0
+  m_Name: CheckpointSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466540237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466540236}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3950348, y: -0.66, z: 104.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1312323898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &466557144 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2249631847548828762, guid: c907ba55ba1d21e4d9c71f554aa7b08e, type: 3}
@@ -32156,7 +32183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5556832034232533586, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5753604035034946442, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_Materials.Array.size
@@ -34959,7 +34986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &586569478
@@ -39330,6 +39356,7 @@ GameObject:
   - component: {fileID: 647057202}
   - component: {fileID: 647057203}
   - component: {fileID: 647057204}
+  - component: {fileID: 647057205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -39490,12 +39517,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647057197}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88ec4e81c68b74c46958bbcac11f59aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   invincibleTime: 1.5
+  deathSound: {fileID: 8300000, guid: 23c6f294f86dc40f1b895607380dd319, type: 3}
+--- !u!114 &647057205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647057197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d083c0cbd43bc4f4490df0c776cfbee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpawn
+  currentSpawn: {fileID: 1681364002}
 --- !u!1001 &647979377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55329,7 +55370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5556832034232533586, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5753604035034946442, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_Materials.Array.size
@@ -70653,7 +70694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &1211437132
@@ -77181,7 +77221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &1311618087 stripped
@@ -77361,6 +77400,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 466540237}
   - {fileID: 1105128597}
   - {fileID: 474424721}
   - {fileID: 1848994538}
@@ -78462,7 +78502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8265943311792062976, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8265943311792062976, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
       propertyPath: m_Size.y
@@ -78470,7 +78510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8265943311792062976, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
       propertyPath: m_Size.z
-      value: 1.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8265943311792062976, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
       propertyPath: m_IsTrigger
@@ -78542,6 +78582,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7527511921878581476, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1452898544}
+    - targetCorrespondingSourceObject: {fileID: 7527511921878581476, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1452898545}
   m_SourcePrefab: {fileID: 100100000, guid: d4d4535c29dc42a47aa050ed8c9207cc, type: 3}
 --- !u!1001 &1331939664
 PrefabInstance:
@@ -85982,7 +86025,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CandleCheckpoint
   candleLight: {fileID: 1285727624}
-  spawnPoint: {fileID: 1681364002}
+  spawnPoint: {fileID: 466540237}
+  checkpointSound: {fileID: 1452898545}
+--- !u!82 &1452898545
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452898540}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 62b744b45f1334380b5e8bb6dc4ee7d3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1452976099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86718,7 +86859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &1462427227 stripped
@@ -87955,7 +88095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5556832034232533586, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5753604035034946442, guid: ac4da5b092d0c154cbf0cf26e7506c92, type: 3}
       propertyPath: m_Materials.Array.size
@@ -90143,7 +90283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!114 &1520470399
@@ -118757,7 +118896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &2023965468 stripped
@@ -121099,7 +121237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!4 &2078139087 stripped
@@ -121880,7 +122017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
-  spawnPoint: {fileID: 1681364002}
   deathSound: {fileID: 134297276}
   respawnDelay: 0.4
 --- !u!1001 &2092840316

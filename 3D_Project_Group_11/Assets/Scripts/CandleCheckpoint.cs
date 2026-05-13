@@ -4,6 +4,7 @@ public class CandleCheckpoint : MonoBehaviour
 {
     public GameObject candleLight;
     public Transform spawnPoint;
+    public AudioSource checkpointSound;
 
     private bool activated = false;
 
@@ -18,7 +19,15 @@ public class CandleCheckpoint : MonoBehaviour
             if (candleLight != null)
                 candleLight.SetActive(true);
 
-           other.transform.position = spawnPoint.position;
+            if (checkpointSound != null)
+                checkpointSound.Play();
+
+            PlayerSpawn playerSpawn = other.GetComponent<PlayerSpawn>();
+
+            if (playerSpawn != null)
+            {
+                playerSpawn.SetSpawn(spawnPoint);
+            }
         }
     }
 }
