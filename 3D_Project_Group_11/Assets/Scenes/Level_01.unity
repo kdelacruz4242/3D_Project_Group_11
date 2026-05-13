@@ -68254,13 +68254,25 @@ PrefabInstance:
       propertyPath: maxDistance
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 893870711683126215, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: soundDelay
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1295075103010111629, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: maxDistance
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 2002679714259107077, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: soundDelay
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3041101084287827134, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: maxDistance
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760386042587985755, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: soundDelay
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5358770211498163675, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68272,7 +68284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5358770211498163675, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.3
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 5358770211498163675, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68302,9 +68314,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5516574176865493495, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: soundDelay
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516574176865493495, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: maxDistance
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6705841090878133961, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: m_Name
       value: Abby's Section
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905371481925889083, guid: 6298616a514244fea922a4851d40c903, type: 3}
+      propertyPath: soundDelay
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8035662269516176544, guid: 6298616a514244fea922a4851d40c903, type: 3}
       propertyPath: maxDistance
@@ -115135,7 +115159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSpawn
   currentSpawn: {fileID: 1681364002}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 23c6f294f86dc40f1b895607380dd319, type: 3}
   invincibleTime: 1.5
 --- !u!143 &1585785556
 CharacterController:
