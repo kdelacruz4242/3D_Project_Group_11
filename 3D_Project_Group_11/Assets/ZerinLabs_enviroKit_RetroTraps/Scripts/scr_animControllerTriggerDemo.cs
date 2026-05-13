@@ -3,11 +3,7 @@
  ---------------------------------------------------------------------------------------------
  Mini-script used to swap a animation (bool) parameter from one state to another (true/false)
  periodically.
- 
- - param_period: determines the time between each state swap
- - param_offset: set ups an offset (delay) before triggering the first swap
-
- */
+*/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -17,19 +13,20 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
 {
     Animator anim;
 
-    public string param_name = "enabled";   //name of the animator bool parameter to swap
-    public bool param_ini_value = true;     //value of the bool parameter by default
-    public float param_period = 0f;         //time period between each bool parameter swap
-    public float param_offset = 0f;         //time offset
+    public string param_name = "enabled";
+    public bool param_ini_value = true;
+    public float param_period = 0f;
+    public float param_offset = 0f;
 
-    private float periodCounter = 0f;       //counter variable to keep track of time
+    public AudioSource spikeSound;   // sound to play when spikes move
 
-    // ---------------------------------------------------------------------------------------------------
+    private float periodCounter = 0f;
+
     void Start()
     {
         anim = GetComponent<Animator>();
 
-        if (param_period == 0f) //if the period is not defined we set a random (small) number
+        if (param_period == 0f)
         {
             param_period = Random.Range(1, 3);
         }
@@ -37,7 +34,6 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
         updateAnimator(param_offset);
     }
 
-    // ---------------------------------------------------------------------------------------------------
     void Update()
     {
         if (Time.time >= periodCounter)
@@ -45,11 +41,14 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
             param_ini_value = swapBool(param_ini_value);
 
             updateAnimator(0f);
+
+            if (spikeSound != null)
+            {
+                spikeSound.Play();
+            }
         }
     }
 
-    // ---------------------------------------------------------------------------------------------------
-    //triggers the new param state and update de time counter
     void updateAnimator(float timeOffset)
     {
         anim.SetBool(param_name, param_ini_value);
@@ -57,19 +56,8 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
         periodCounter = Time.time + param_period + timeOffset;
     }
 
-    // ---------------------------------------------------------------------------------------------------
-    //triggers the new param state and update de time counter
     bool swapBool(bool boolVal)
     {
-        if (boolVal == true)
-        {
-            boolVal = false;
-        }
-        else
-        {
-            boolVal = true;
-        }
-
-        return boolVal;
+        return !boolVal;
     }
 }
