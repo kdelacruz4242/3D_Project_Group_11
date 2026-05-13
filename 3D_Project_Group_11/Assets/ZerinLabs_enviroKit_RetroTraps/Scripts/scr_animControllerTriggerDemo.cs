@@ -1,11 +1,4 @@
-﻿/*
- DESCRIPTION:
- ---------------------------------------------------------------------------------------------
- Mini-script used to swap a animation (bool) parameter from one state to another (true/false)
- periodically.
-*/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +11,8 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
     public float param_period = 0f;
     public float param_offset = 0f;
 
-    public AudioSource spikeSound;   // sound to play when spikes move
+    public AudioSource spikeSound;
+    public Collider spikeDeathCollider;
 
     private float periodCounter = 0f;
 
@@ -38,7 +32,7 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
     {
         if (Time.time >= periodCounter)
         {
-            param_ini_value = swapBool(param_ini_value);
+            param_ini_value = !param_ini_value;
 
             updateAnimator(0f);
 
@@ -53,11 +47,11 @@ public class scr_animControllerTriggerDemo : MonoBehaviour
     {
         anim.SetBool(param_name, param_ini_value);
 
-        periodCounter = Time.time + param_period + timeOffset;
-    }
+        if (spikeDeathCollider != null)
+        {
+            spikeDeathCollider.enabled = param_ini_value;
+        }
 
-    bool swapBool(bool boolVal)
-    {
-        return !boolVal;
+        periodCounter = Time.time + param_period + timeOffset;
     }
 }
