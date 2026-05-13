@@ -46536,6 +46536,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2249631847548828762, guid: c907ba55ba1d21e4d9c71f554aa7b08e, type: 3}
   m_PrefabInstance: {fileID: 782406152}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &782758887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5337338106124339867, guid: 93e086a603967494c9c9233b5a49af89, type: 3}
+  m_PrefabInstance: {fileID: 1651733205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &782758888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782758887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa3db01b79bc4c4baba3b7996809fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpikeDeath
+  spawnPoint: {fileID: 1681364002}
+  deathSound: {fileID: 134297276}
+  respawnDelay: 0
 --- !u!1001 &783323679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70948,6 +70968,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1107888720}
     m_Modifications:
+    - target: {fileID: 184749416605318651, guid: c907ba55ba1d21e4d9c71f554aa7b08e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2249631847548828762, guid: c907ba55ba1d21e4d9c71f554aa7b08e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.69948
@@ -90787,7 +90811,7 @@ Transform:
   m_GameObject: {fileID: 1555670158}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.27023345, z: -0, w: 0.96279484}
-  m_LocalPosition: {x: 0.08000183, y: 0.72, z: 0.08000183}
+  m_LocalPosition: {x: 1.6410751, y: 0.72, z: 2.6418457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96179,10 +96203,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square_Carpet
       objectReference: {fileID: 0}
+    - target: {fileID: 5862042126518535028, guid: 93e086a603967494c9c9233b5a49af89, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5337338106124339867, guid: 93e086a603967494c9c9233b5a49af89, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 782758888}
   m_SourcePrefab: {fileID: 100100000, guid: 93e086a603967494c9c9233b5a49af89, type: 3}
 --- !u!1001 &1653946972
 PrefabInstance:
