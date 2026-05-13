@@ -83,33 +83,26 @@ public class SpiderTrap : MonoBehaviour
 
     IEnumerator KillPlayer()
     {
-        // play attack animation and sound
-        anim.Play("attack1");
-        if (jumpscareSound != null)
-            audioSource.Play();
+    anim.Play("attack1");
+    if (jumpscareSound != null)
+        audioSource.Play();
 
-        // black screen
-        blackScreen.color = new Color(0, 0, 0, 1f);
+    blackScreen.color = new Color(0, 0, 0, 1f);
+    yield return new WaitForSeconds(0.5f);
 
-        yield return new WaitForSeconds(0.5f);
+    // use PlayerSpawn instead of CheckpointManager
+    PlayerSpawn playerSpawn = player.GetComponent<PlayerSpawn>();
+    if (playerSpawn != null)
+        playerSpawn.Respawn();
 
-        // respawn player
-        CharacterController controller = player.GetComponent<CharacterController>();
-        if (controller != null) controller.enabled = false;
-        player.transform.position = CheckpointManager.lastCheckpoint;
-        if (controller != null) controller.enabled = true;
+    yield return new WaitForSeconds(0.5f);
 
-        yield return new WaitForSeconds(0.5f);
+    blackScreen.color = new Color(0, 0, 0, 0);
+    transform.position = startPosition;
+    transform.rotation = startRotation;
+    anim.Play("idle");
 
-        // fade black screen out
-        blackScreen.color = new Color(0, 0, 0, 0);
-
-        // return spider to hiding spot
-        transform.position = startPosition;
-        transform.rotation = startRotation;
-        anim.Play("idle");
-
-        yield return new WaitForSeconds(1f);
-        triggered = false;
+    yield return new WaitForSeconds(1f);
+    triggered = false;
     }
 }
