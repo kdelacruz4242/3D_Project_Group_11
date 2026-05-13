@@ -4,10 +4,11 @@ public class TrapDamage : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        PlayerHealth health = other.GetComponent<PlayerHealth>();
-        if (health != null)
+        if (other.CompareTag("Player"))
         {
-            health.TakeDamage();
+            PlayerSpawn playerSpawn = other.GetComponent<PlayerSpawn>();
+            if (playerSpawn != null)
+                playerSpawn.Respawn();
         }
     }
 }

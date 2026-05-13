@@ -63,6 +63,8 @@ public class Movement : MonoBehaviour
  
     void UpdateMove()
     {
+        if (!controller.enabled) return;
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, 0.2f, ground);
  
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

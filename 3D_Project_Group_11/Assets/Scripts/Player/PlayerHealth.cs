@@ -11,15 +11,17 @@ public class PlayerHealth : MonoBehaviour
     Image damageFlash;
     CharacterController controller;
     AudioSource audioSource;
+    PlayerSpawn playerSpawn;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        playerSpawn = GetComponent<PlayerSpawn>();
         CheckpointManager.lastCheckpoint = transform.position;
 
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 0f; // 2D sound so player always hears it
+        audioSource.spatialBlend = 0f;
 
         GameObject canvas = new GameObject("DamageCanvas");
         Canvas c = canvas.AddComponent<Canvas>();
@@ -41,6 +43,10 @@ public class PlayerHealth : MonoBehaviour
         if (deathSound != null)
             audioSource.PlayOneShot(deathSound);
 
+        CeilingDrop[] ceilingBlocks = FindObjectsByType<CeilingDrop>(FindObjectsSortMode.None);
+        foreach (CeilingDrop block in ceilingBlocks)
+            block.PlayerDied();
+
         StartCoroutine(FlashRed());
         StartCoroutine(Respawn());
     }
@@ -53,12 +59,26 @@ public class PlayerHealth : MonoBehaviour
     }
 
     IEnumerator Respawn()
+{
+    isInvincible = true;
+    
+    if (playerSpawn != null && playerSpawn.currentSpawn != null)
     {
-        isInvincible = true;
+        CharacterController cc = GetComponent<CharacterController>();
+        if (cc != null) cc.enabled = false;
+        transform.position = playerSpawn.currentSpawn.position;
+        yield return new WaitForSeconds(0.1f); // small delay
+        if (cc != null) cc.enabled = true;
+    }
+    else
+    {
         controller.enabled = false;
         transform.position = CheckpointManager.lastCheckpoint;
+        yield return new WaitForSeconds(0.1f); // small delay
         controller.enabled = true;
-        yield return new WaitForSeconds(invincibleTime);
-        isInvincible = false;
     }
+
+    yield return new WaitForSeconds(invincibleTime);
+    isInvincible = false;
+}
 }
